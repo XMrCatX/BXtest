@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 if(isset($_POST['subRegister'])){
 
     include_once 'cbd.php';

@@ -12,7 +12,9 @@
     </head>
     <body>
         <header>
-
+            <form action="php/logout.db.php" method="post">
+                <button name="sublogout" type="submit">Logout</button>
+            </form>
         </header>
         <div>
 
