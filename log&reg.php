@@ -13,7 +13,7 @@
     </head>
     <body>
         <div class="main-container">
-            <img src="pics/logo_bx.png" alt="BX-logo"/>
+            <img src="pics/logo_bx.png" width="400px" height="410px" alt="BX-logo"/>
             <button name="Log" onclick="deleteFormReg(),showFormLog()">Login</button>
             <button name="Reg" onclick="deleteFormLog(),showFormReg()">Register</button>
             <form name="logForm" id="logForm" action="login.dbd.php" style="display:none">
