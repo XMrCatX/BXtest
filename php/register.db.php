@@ -6,8 +6,6 @@ if(isset($_POST['submit'])){
 
     $email = mysqli_real_escape_string($conn,$_POST['email']);
     $pwd = mysqli_real_escape_string($conn,$_POST['pwd']);
-    $ckpwd = mysqli_real_escape_string($conn,$_POST['ckpwd']);
-
 
     if(empty($email) || empty($pwd) || empty($ckpwd) ){
         header("Location: ../log&reg.php?register=empty");
@@ -30,7 +28,7 @@ if(isset($_POST['submit'])){
                 $sql = "INSERT INTO users(user_email,user_pwd) VALUES ($email,$hashPwd);";
                 mysqli_query($conn,$sql);
                 header("Location: ../log&reg.php?register=success");
-
+                exit();
             }
         }
     }
@@ -38,3 +36,4 @@ if(isset($_POST['submit'])){
     header("Location: ../log&reg.php");
     exit();
 }
+?>
