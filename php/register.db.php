@@ -7,7 +7,7 @@ if(isset($_POST['submit'])){
     $email = mysqli_real_escape_string($conn,$_POST['email']);
     $pwd = mysqli_real_escape_string($conn,$_POST['pwd']);
 
-    if(empty($email) || empty($pwd) || empty($ckpwd) ){
+    if(empty($email) || empty($pwd) ){
         header("Location: ../log&reg.php?register=empty");
         exit();
     } else {
@@ -33,7 +33,7 @@ if(isset($_POST['submit'])){
         }
     }
 }else{
-    header("Location: ../log&reg.php");
+    header("Location: ../log&reg.php?register=error");
     exit();
 }
 ?>
