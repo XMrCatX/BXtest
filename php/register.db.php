@@ -17,7 +17,7 @@ if(isset($_POST['submit'])){
         header("Location: ../log&reg.php?register=email");
         exit();
         } else {
-            $sql = "SELECT * FROM users WHERE ueser_email = '$email';";
+            $sql = "SELECT * FROM users WHERE user_email = '$email'";
             $result = mysqli_query($conn, $sql);
             $resultcheck = mysqli_num_rows($result);
 
@@ -29,7 +29,7 @@ if(isset($_POST['submit'])){
 
                 $sql = "INSERT INTO users(user_email,user_pwd) VALUES ($email,$hashPwd);";
                 mysqli_query($conn,$sql);
-                header("Location: ../log&reg.php?register=succes");
+                header("Location: ../log&reg.php?register=success");
 
             }
         }

@@ -1,8 +1,8 @@
 <?php
 
-$dbservename = "";
-$dbusername = "";
+$dbservename = "local";
+$dbusername = "root";
 $dbpwd = "";
-$dbname = "";
+$dbname = "logindb";
 
 $conn = mysqli_connect($dbservename,$dbusername,$dbpwd,$dbname);
