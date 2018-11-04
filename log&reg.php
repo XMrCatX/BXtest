@@ -12,10 +12,8 @@
         <link rel="stylesheet" type="text/css" href="css/logPageStyle.css"/>.
     </head>
     <body>
-        <header>
-            <h1>BX Brussels</h1>
-        </header>
         <div class="main-container">
+            <img src="pics/logo_bx.png" alt="BX-logo"/>
             <button name="Log" onclick="deleteFormReg(),showFormLog()">Login</button>
             <button name="Reg" onclick="deleteFormLog(),showFormReg()">Register</button>
             <form name="logForm" id="logForm" action="login.dbd.php" style="display:none">

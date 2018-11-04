@@ -108,7 +108,8 @@ header {
 }
 
 body {
-    background: #ccc;
+    background-image:url(/pics/Banner.jpg);
+    background-size: cover;
 }
 
 .main-container {
@@ -117,6 +118,10 @@ body {
     margin: auto;
 }
 
+.main-container image {
+    margin: 0;
+    padding: 0;
+}
 .main-container button {
     width: 49.5%;
     height: 40px;
@@ -143,7 +148,7 @@ body {
     height: 40px;
     padding: 0px 5%;
     border: none;
-    background-color: azure;
+    background-color: #666;
     font-family: arial;
     font-size: 16px;
     color: #111;
