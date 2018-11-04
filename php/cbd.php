@@ -1,6 +1,6 @@
 <?php
 
-$dbservename = "local";
+$dbservename = "localhost";
 $dbusername = "root";
 $dbpwd = "";
 $dbname = "logindb";
