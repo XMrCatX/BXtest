@@ -29,7 +29,7 @@ if(isset($_POST['submit'])){
 
                 $sql = "INSERT INTO users(user_email,user_pwd) VALUES ($email,$hashPwd);";
                 mysqli_query($conn,$sql);
-                header("Location: ../hub.php?register=succes");
+                header("Location: ../log&reg.php?register=succes");
 
             }
         }
