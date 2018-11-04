@@ -28,8 +28,14 @@
                 <button name="subRegister" type="submit">Register</button>
             </form>
         </div>
-    </body>
-    <footer>
-
+        <footer>
+        <div class="footer-box">
+            <lu>
+                <li><a href="http://www.bxbrussels.com/nl/copyright/">© Copyright BX Brussels</a></li>
+                <li><a href="http://www.bxbrussels.com/fr/privacy-policy-fr/">Privacybeleid</a></li>
+                <li><a href="http://www.bxbrussels.com/fr/about-fr/">About</a></li>
+            </lu>
+        </div>
     </footer>
+    </body>
 </html>

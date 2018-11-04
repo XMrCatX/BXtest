@@ -29,6 +29,7 @@ time, mark, audio, video {
 
 body {
     line-height:1;
+    width: 100%;
 }
 
 article,aside,details,figcaption,figure,
@@ -103,19 +104,28 @@ input, select {
 
 /* my code */
 
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 header {
     width: 100%;
 }
 
 body {
-    background-image:url(/pics/Banner.jpg);
+    background-image:url(../pics/Banner.jpg);
     background-size: cover;
+    height: 100%;
 }
 
 .main-container {
+    position: relative;
     padding-top: 20px;
     width: 400px;
     margin: auto;
+    min-height: 100%;
 }
 
 .main-container image {
@@ -176,5 +186,30 @@ body {
 .main-container form button:hover {
     background-color: #111;
     color: #b27f08;
+}
 
+footer {
+    width: 100%;
+    position: absolute;
+    clear: both;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #111;
+}
+
+.footer-box {
+    width: 400px;
+    margin: auto;
+}
+
+footer lu li {
+    float: left;
+    list-style: none;
+    float: center;
+}
+
+footer lu li a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
 }
