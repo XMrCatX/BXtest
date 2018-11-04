@@ -16,12 +16,12 @@
             <img src="pics/logo_bx.png" width="400px" height="410px" alt="BX-logo"/>
             <button name="Log" onclick="deleteFormReg(),showFormLog()">Login</button>
             <button name="Reg" onclick="deleteFormLog(),showFormReg()">Register</button>
-            <form name="logForm" id="logForm" action="login.dbd.php" style="display:none">
+            <form name="logForm" id="logForm" action="php/login.db.php" method="post" style="display:none">
                 <input name="email" type="email" placeholder="E-mail"/>
                 <input name="pwd" type="password" placeholder="Password"/>
                 <button name="sublogin" type="submit">Login</button>
             </form>
-            <form name="regForm" id="regForm" action="register.dbd.php" style="display:none">
+            <form name="regForm" id="regForm" action="php/register.db.php" method="post" style="display:none">
                 <input name="email" type="email" placeholder="E-mail"/>
                 <input name="pwd" type="password" placeholder="Password"/>
                 <input name="ckpwd" type="password" placeholder="Confirm Password"/>
