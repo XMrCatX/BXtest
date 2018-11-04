@@ -1,6 +1,6 @@
 <?php
 
-if(isset($_POST['submit'])){
+if(isset($_POST['subRegister'])){
 
     include_once 'cbd.php';
 
@@ -25,15 +25,19 @@ if(isset($_POST['submit'])){
             } else {
                 $hashPwd = password_hash($pwd, PASSWORD_DEFAULT);
 
-                $sql = "INSERT INTO users(user_email,user_pwd) VALUES ($email,$hashPwd);";
-                mysqli_query($conn,$sql);
-                header("Location: ../log&reg.php?register=success");
-                exit();
+                $sql = "INSERT INTO users(user_email,user_pwd) VALUES ('$email','$hashPwd');";
+                if(mysqli_query($conn,$sql)){
+                    header("Location: ../log&reg.php?register=success");
+                    exit();
+                }else{
+                    header("Location: ../log&reg.php?register=insert error");
+                    exit();
+                }
             }
         }
     }
 }else{
-    header("Location: ../log&reg.php?register=error");
+    header("Location: ../log&reg.php");
     exit();
 }
 ?>

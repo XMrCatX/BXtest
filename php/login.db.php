@@ -2,7 +2,7 @@
 
 session_start();
 
-if(isset($_POST['submit'])){
+if(isset($_POST['sublogin'])){
     include 'cbd.php';
 
     $email = mysqli_real_escape_string($conn,$_POST['email']);
