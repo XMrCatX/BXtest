@@ -3,12 +3,12 @@
 <html>
     <head>
         <title>log&amp;reg</title>
-            <script type = "text/javascript">
-                function showFormLog() {document.getElementById("logForm").style.display = "block";}
-                function showFormReg() {document.getElementById("regForm").style.display = "block";}
-                function deleteFormLog() {document.getElementById("logForm").style.display = "none";}
-                function deleteFormReg() {document.getElementById("regForm").style.display = "none";}
-            </script>
+        <script type = "text/javascript">
+            function showFormLog() {document.getElementById("logForm").style.display = "block";}
+            function showFormReg() {document.getElementById("regForm").style.display = "block";}
+            function deleteFormLog() {document.getElementById("logForm").style.display = "none";}
+            function deleteFormReg() {document.getElementById("regForm").style.display = "none";}
+        </script>
         <link rel="stylesheet" type="text/css" href="css/logPageStyle.css"/>.
     </head>
     <body>
