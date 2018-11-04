@@ -15,18 +15,18 @@
         <header>
             <h1>BX Brussels</h1>
         </header>
-        <div>
+        <div class="main-container">
             <button name="Log" onclick="deleteFormReg(),showFormLog()">Login</button>
             <button name="Reg" onclick="deleteFormLog(),showFormReg()">Register</button>
             <form name="logForm" id="logForm" action="login.dbd.php" style="display:none">
-                E-mail:<input name="email" type="email"/>
-                Password:<input name="pwd" type="password"/>
+                <input name="email" type="email" placeholder="E-mail"/>
+                <input name="pwd" type="password" placeholder="Password"/>
                 <button name="sublogin" type="submit">Login</button>
             </form>
             <form name="regForm" id="regForm" action="register.dbd.php" style="display:none">
-                E-mail:<input name="email" type="email"/>
-                Password:<input name="pwd" type="password"/>
-                Conferm password:<input name="ckpwd" type="password"/>
+                <input name="email" type="email" placeholder="E-mail"/>
+                <input name="pwd" type="password" placeholder="Password"/>
+                <input name="ckpwd" type="password" placeholder="Confirm Password"/>
                 <button name="subRegister" type="submit">Register</button>
             </form>
         </div>

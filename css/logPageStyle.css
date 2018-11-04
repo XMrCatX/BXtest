@@ -102,3 +102,72 @@ input, select {
 }
 
 /* my code */
+
+header {
+    width: 100%;
+}
+
+body {
+    background: #ccc;
+}
+
+.main-container {
+    padding-top: 20px;
+    width: 400px;
+    margin: auto;
+}
+
+.main-container button {
+    width: 49.5%;
+    height: 40px;
+    border: none;
+    background-color: #222;
+    font-family: arial;
+    font-size: 16px;
+    color: white;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.main-container button:hover {
+    background-color: #111;
+    color: #b27f08;
+}
+
+.main-container form{
+    padding-top: 20px;
+}
+
+.main-container form input {
+    width: 90%;
+    height: 40px;
+    padding: 0px 5%;
+    border: none;
+    background-color: azure;
+    font-family: arial;
+    font-size: 16px;
+    color: #111;
+    line-height: 40px;
+    margin-bottom: 4px;
+}
+
+.main-container form button {
+    display: block;
+    width: 30%;
+    height: 40px;
+    border: none;
+    background-color: #222;
+    font-family: arial;
+    font-size: 16px;
+    color: white;
+    line-height: 40px;
+    margin: 0;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.main-container form button:hover {
+    background-color: #111;
+    color: #b27f08;
+
+}
