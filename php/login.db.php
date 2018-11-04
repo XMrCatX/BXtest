@@ -28,7 +28,7 @@ if(isset($_POST['sublogin'])){
                 } elseif($hashedpwdch == true){
                     $_SESSION['u_id'] = $row['user_id'];
                     $_SESSION['u_email'] = $row['user_email'];
-                    header("Location: ../indx.php?login=success");
+                    header("Location: ../index.php?login=success");
                     exit();
                 }
             }
