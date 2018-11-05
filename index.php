@@ -2,7 +2,7 @@
     session_start();
 
     if(!isset($_SESSION['u_id'])){
-        header("Location: ../log&reg.php");
+        header("Location: ../Register_Login.php");
         exit();}
 ?>
 

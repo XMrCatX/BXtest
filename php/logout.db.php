@@ -3,7 +3,7 @@
         session_start();
         session_unset();
         session_destroy();
-        header("Location: ../log&reg.php");
+        header("Location: ../Register_Login.php");
         exit();
     }
 ?>
