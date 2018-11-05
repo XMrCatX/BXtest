@@ -34,14 +34,14 @@
         <button name="Log" onclick="deleteFormReg(),showFormLog()">Login</button>
         <button name="Reg" onclick="deleteFormLog(),showFormReg()">Register</button>
         <form name="logForm" id="logForm" action="php/login.db.php" method="post" style="display:none">
-            <input name="email" type="email" placeholder="E-mail" />
-            <input name="pwd" type="password" placeholder="Password" />
+            <input name="email" type="email" required placeholder="E-mail" />
+            <input name="pwd" type="password" required placeholder="Password" />
             <button name="sublogin" type="submit">Login</button>
         </form>
         <form name="regForm" id="regForm" action="php/register.db.php" method="post" style="display:none">
-            <input name="email" type="email" placeholder="E-mail" />
-            <input name="pwd" type="password" placeholder="Password" />
-            <input name="ckpwd" type="password" placeholder="Confirm Password" />
+            <input name="email" type="email" required placeholder="E-mail" <?php if($_GET['error'] = 'email'){ echo 'class="error"'; } ?> />
+            <input name="pwd" type="password" required placeholder="Password" />
+            <input name="ckpwd" type="password" required placeholder="Confirm Password" />
             <button name="subRegister" type="submit">Register</button>
         </form>
     </div>
