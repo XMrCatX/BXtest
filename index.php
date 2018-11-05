@@ -1,7 +1,9 @@
 <?php
     session_start();
 
-    if(isset($_SESSION['u_id'])){
+    if(!isset($_SESSION['u_id'])){
+        header("Location: ../log&reg.php");
+        exit();}
 ?>
 
 <!DOCTYPE html>
@@ -24,10 +26,3 @@
         </footer>
     </body>
 </html>
-
-<?php
-    }else{
-        header("Location: ../log&reg.php");
-        exit();
-    }
-?>
